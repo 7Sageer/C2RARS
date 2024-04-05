@@ -2,7 +2,7 @@
 
 **Warning** : The project is still in an early stage. But it is already possible to do the conversion of simple programs.
 
-The project is of narrow use **unless** you are mad in debugging RISC-V assembly code in RARS.
+The project is of narrow use **unless** you are mad in debugging RISC-V assembly code in RARS. It is a simple solution to convert C code to RISC-V assembly code that can run in RARS.
 
 ## Usage
 
