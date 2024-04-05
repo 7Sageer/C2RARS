@@ -43,6 +43,8 @@ Up to now, you can use the following functions:
 
 `exit_program()`
 
+You can edit `syscall.h` to customize your own functions.
+
 You can find a simple example in `fib.c`, which can calculate the Fibonacci number.
 
 Then you can compile your code by the following command:
@@ -51,3 +53,11 @@ Then you can compile your code by the following command:
 risv32-unknown-elf-gcc -S fib.c
 ```
 Check the generated `fib.s` file, which contains the RISC-V assembly code that could directly run in RARS. Wow!
+
+## How it works
+
+The toolchain is based on the `riscv32-unknown-elf-gcc`. It will compile the C code into RISC-V assembly code. The generated assembly code couldn't run in RARS directly. So some modifications need to be done to make it run in RARS.
+
+Since RARS is not supporting the std library, so I replace the function in the std library with the function in `syscall.h` by inline assembly of `ecall`.
+
+RARS won't call the `main` function by default. So I add a `start` function to call the `main` function in the C code.
