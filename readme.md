@@ -1,6 +1,6 @@
 # C2RARS: A solution to solve the problem of C to RISC-V in RARS
 
-**Warning** : The project is still in an early stage. But it is already possible to do the conversion of simple programs. Such like your lab assignment in OJ.
+**Warning** : The project is still in an early stage. But it is already possible to do the conversion of simple programs. Such like your lab assignments in OJ.
 
 The project is of narrow use **unless** you are mad in debugging RISC-V assembly code in RARS. It is a simple solution to convert C code to RISC-V assembly code that can run in RARS.
 
