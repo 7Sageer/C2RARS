@@ -48,6 +48,6 @@ You can find a simple example in `fib.c`, which can calculate the Fibonacci numb
 Then you can compile your code by the following command:
 
 ``` bash
-risv32-unknown-elf-gcc -S test.c
+risv32-unknown-elf-gcc -S fib.c
 ```
-Check the generated test.s file, which contains the RISC-V assembly code that could directly run in RARS. Wow!
+Check the generated `fib.s` file, which contains the RISC-V assembly code that could directly run in RARS. Wow!
