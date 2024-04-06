@@ -22,6 +22,9 @@ git submodule update --init --recursive
 sudo make
 ```
 
+Go to https://github.com/riscv-collab/riscv-gnu-toolchain to find more information.
+
+
 If you are using Windows, you are highly recommended to use WSL.
 
 
@@ -50,8 +53,15 @@ You can find a simple example in `fib.c`, which can calculate the Fibonacci numb
 Then you can compile your code by the following command:
 
 ``` bash
+risv64-unknown-elf-gcc -S fib.c
+```
+
+or you are using riscv32-unknown-elf-gcc:
+
+``` bash
 risv32-unknown-elf-gcc -S fib.c
 ```
+
 Check the generated `fib.s` file, which contains the RISC-V assembly code that could directly run in RARS. Wow!
 
 ## How it works
